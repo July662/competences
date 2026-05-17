@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julie Tillard — Compétences, savoir-être et expertises</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'DM Sans', sans-serif; background: #fafaf8; color: #1a1a18; font-size: 13px; line-height: 1.6; }
+  .page { max-width: 860px; margin: 0 auto; padding: 2.5rem 2rem; }
+
+  .header { display: grid; grid-template-columns: 220px 1fr; gap: 1.5rem; align-items: start; padding-bottom: 1.2rem; border-bottom: 2px solid #1a1a18; margin-bottom: 1.8rem; }
+  .header-name { font-family: 'DM Serif Display', serif; font-size: 24px; font-weight: 400; margin-bottom: 6px; }
+  .header-coords p { font-size: 12px; color: #555; margin-bottom: 2px; }
+  .header-accroche { font-size: 13px; color: #555; font-style: italic; border-left: 2px solid #bbb; padding-left: 14px; line-height: 1.8; display: flex; align-items: center; }
+
+  .page-title { font-size: 10.5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.1em; color: #888; margin-bottom: 1.2rem; }
+
+  /* grille principale à 3 colonnes */
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 1.8rem; }
+  .block { background: #fff; border: 0.5px solid #ddddd5; border-radius: 10px; padding: 0.85rem 1rem; }
+  .block.col2 { grid-column: span 2; }
+  .block.full { grid-column: span 3; }
+  .block-accent { width: 24px; height: 3px; border-radius: 2px; margin-bottom: 7px; }
+  .block-title { font-size: 10.5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: #777; margin-bottom: 8px; }
+  .tag-list { display: flex; flex-wrap: wrap; gap: 4px; }
+  .tag { font-size: 11.5px; padding: 2px 7px; border-radius: 4px; line-height: 1.5; }
+
+  .t-blue   { background: #E6F1FB; color: #0C447C; }
+  .t-teal   { background: #E1F5EE; color: #085041; }
+  .t-purple { background: #EEEDFE; color: #3C3489; }
+  .t-coral  { background: #FAECE7; color: #712B13; }
+  .t-green  { background: #EAF3DE; color: #27500A; }
+  .t-amber  { background: #FAEEDA; color: #633806; }
+
+  .acc-blue   { background: #378ADD; }
+  .acc-teal   { background: #1D9E75; }
+  .acc-purple { background: #7F77DD; }
+  .acc-coral  { background: #D85A30; }
+  .acc-green  { background: #639922; }
+  .acc-amber  { background: #BA7517; }
+
+  .bottom-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  .section-title { font-size: 10.5px; font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; color: #777; border-bottom: 0.5px solid #ddddd5; padding-bottom: 5px; margin-bottom: 10px; }
+
+  .diplome-item { display: flex; justify-content: space-between; align-items: baseline; gap: 8px; padding: 4px 0; border-bottom: 0.5px solid #f0efe8; font-size: 12px; }
+  .diplome-item:last-child { border-bottom: none; }
+  .diplome-label { color: #1a1a18; }
+  .diplome-label strong { font-weight: 500; }
+  .diplome-meta { color: #888; font-size: 11px; text-align: right; white-space: nowrap; flex-shrink: 0; }
+
+  .xp-item { display: grid; grid-template-columns: 1fr auto; gap: 2px 12px; padding: 4px 0; border-bottom: 0.5px solid #f0efe8; font-size: 12px; align-items: baseline; }
+  .xp-item:last-child { border-bottom: none; }
+  .xp-role { font-weight: 500; color: #1a1a18; }
+  .xp-structure { color: #666; font-size: 11px; grid-column: 1; }
+  .xp-dates { color: #aaa; font-size: 11px; white-space: nowrap; grid-row: 1 / span 2; grid-column: 2; align-self: center; }
+
+  @media print { body { background: white; } .page { padding: 1.5rem; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+    <div class="header">
+    <div class="header-coords">
+      <p class="header-name">Julie Tillard</p>
+      <p>5 rue Amand Bence — 14000 Caen</p>
+      <p>06 81 01 45 09</p>
+      <p>julie.tillard@outlook.fr</p>
+    </div>
+    <div class="header-accroche">
+      Professionnelle aux compétences larges, forgées dans le travail social et le secteur culturel, je cherche à rejoindre un projet dont l'impact est concret et les valeurs en accord avec les miennes. Ce qui me motive : savoir que mon travail contribue à quelque chose qui compte, rester en lien avec des personnes, et construire avec une équipe. J'aime travailler en autonomie, apprendre et aussi proposer.
+    </div>
+  </div>
+
+  <p class="page-title">Compétences, savoir-être et expertises</p>
+
+  <div class="grid">
+
+    <!-- Ligne 1 : Secteurs (pleine largeur) -->
+    <div class="block full">
+      <div class="block-accent acc-coral"></div>
+      <p class="block-title">Secteurs & réseaux</p>
+      <div class="tag-list">
+        <span class="tag t-coral">Spectacle vivant & culture</span>
+        <span class="tag t-coral">Secteur associatif & ESS</span>
+        <span class="tag t-coral">Travail social & insertion</span>
+        <span class="tag t-coral">Formation professionnelle</span>
+        <span class="tag t-coral">Réseau OPCO</span>
+        <span class="tag t-coral">Financement public & subventions</span>
+        <span class="tag t-coral">CCN Spectacle & CCN Animation</span>
+      </div>
+    </div>
+
+    <!-- Ligne 2 : Administration (2 col) + Relationnel (1 col) -->
+    <div class="block col2">
+      <div class="block-accent acc-purple"></div>
+      <p class="block-title">Administration & gestion</p>
+      <div class="tag-list">
+        <span class="tag t-purple">Gestion administrative du personnel</span>
+        <span class="tag t-purple">Paies permanents & intermittents</span>
+        <span class="tag t-purple">Déclarations sociales & DSN</span>
+        <span class="tag t-purple">Rédaction de contrats (CDI, CDD, CDDU)</span>
+        <span class="tag t-purple">Suivi temps de travail & absences</span>
+        <span class="tag t-purple">DPAE, affiliations, soldes de tout compte</span>
+        <span class="tag t-purple">Fins de contrats (démissions, licenciements, ruptures conventionnelles)</span>
+        <span class="tag t-purple">Saisie comptable & rapprochement bancaire</span>
+        <span class="tag t-purple">Suivi budgétaire & trésorerie</span>
+        <span class="tag t-purple">Facturation & relances</span>
+        <span class="tag t-purple">Relations expert-comptable & organismes sociaux</span>
+        <span class="tag t-purple">Rédaction courriers, conventions, comptes rendus</span>
+        <span class="tag t-purple">Classement & archivage</span>
+        <span class="tag t-purple">Veille juridique & réglementaire</span>
+        <span class="tag t-purple">Recrutement & GPEC</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-accent acc-teal"></div>
+      <p class="block-title">Relationnel</p>
+      <div class="tag-list">
+        <span class="tag t-teal">Écoute active</span>
+        <span class="tag t-teal">Accueil de publics</span>
+        <span class="tag t-teal">Accompagnement individuel</span>
+        <span class="tag t-teal">Animation de réseau</span>
+        <span class="tag t-teal">Relations partenariales</span>
+        <span class="tag t-teal">Travail en équipe</span>
+        <span class="tag t-teal">Médiation</span>
+        <span class="tag t-teal">Discrétion & confidentialité</span>
+        <span class="tag t-teal">Conseil & orientation</span>
+      </div>
+    </div>
+
+    <!-- Ligne 3 : Organisationnel (2 col) + Outils (1 col) -->
+    <div class="block col2">
+      <div class="block-accent acc-blue"></div>
+      <p class="block-title">Organisation</p>
+      <div class="tag-list">
+        <span class="tag t-blue">Gestion des priorités</span>
+        <span class="tag t-blue">Conduite de projet</span>
+        <span class="tag t-blue">Planification & suivi</span>
+        <span class="tag t-blue">Coordination d'équipe</span>
+        <span class="tag t-blue">Tableaux de bord</span>
+        <span class="tag t-blue">Reporting d'activité</span>
+        <span class="tag t-blue">Autonomie & initiative</span>
+        <span class="tag t-blue">Amélioration continue</span>
+        <span class="tag t-blue">Organisation logistique</span>
+      </div>
+    </div>
+
+    <div class="block">
+      <div class="block-accent acc-green"></div>
+      <p class="block-title">Outils & langues</p>
+      <div class="tag-list">
+        <span class="tag t-green">Pack Office (Word, Excel, Outlook)</span>
+        <span class="tag t-green">sPAIEctacle</span>
+        <span class="tag t-green">Sage</span>
+        <span class="tag t-green">Ciel Asso</span>
+        <span class="tag t-green">Net-entreprises / DSN</span>
+        <span class="tag t-green">Gestion dématérialisée</span>
+        <span class="tag t-green">Anglais B1</span>
+        <span class="tag t-green">IA génératives</span>
+        <span class="tag t-green">Permis B — véhicule</span>
+      </div>
+    </div>
+
+    <!-- Ligne 4 : Annexes (pleine largeur) -->
+    <div class="block full">
+      <div class="block-accent acc-amber"></div>
+      <p class="block-title">Transversal</p>
+      <div class="tag-list">
+        <span class="tag t-amber">Méthodologie de projet</span>
+        <span class="tag t-amber">Ingénierie de formation</span>
+        <span class="tag t-amber">Animation de formations</span>
+        <span class="tag t-amber">Recherche de financements</span>
+        <span class="tag t-amber">Appels à projets</span>
+        <span class="tag t-amber">Élaboration & suivi de budget</span>
+        <span class="tag t-amber">Accompagnement à la création d'entreprise</span>
+        <span class="tag t-amber">Structuration de projet</span>
+        <span class="tag t-amber">Fiscalité des structures culturelles</span>
+        <span class="tag t-amber">Relations contractuelles édition musicale</span>
+        <span class="tag t-amber">Rémunération des artistes</span>
+        <span class="tag t-amber">Statut de l'artiste-auteur</span>
+        <span class="tag t-amber">Vie associative & gouvernance</span>
+        <span class="tag t-amber">Gestion d'équipe</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- BAS : diplômes + expériences -->
+  <div class="bottom-grid">
+
+    <div>
+      <p class="section-title">Formations & diplômes</p>
+      <div class="diplome-item">
+        <span class="diplome-label"><strong>Licence pro</strong> RH <strong>(niv. 6)</strong></span>
+        <span class="diplome-meta">IUT de Caen · 2018</span>
+      </div>
+      <div class="diplome-item">
+        <span class="diplome-label">Concevoir & animer une formation</span>
+        <span class="diplome-meta">AFEI · 2015</span>
+      </div>
+      <div class="diplome-item">
+        <span class="diplome-label"><strong>Titre pro</strong> Secrétaire-Comptable <strong>(niv. 4)</strong></span>
+        <span class="diplome-meta">AFPA Caen · 2013</span>
+      </div>
+      <div class="diplome-item">
+        <span class="diplome-label">CFGA — Certificat de formation à la gestion associative</span>
+        <span class="diplome-meta">SMACC · 2013</span>
+      </div>
+      <div class="diplome-item">
+        <span class="diplome-label">Formation éducatrice spécialisée (non achevée)</span>
+        <span class="diplome-meta">IRTS · 2003–2004</span>
+      </div>
+      <div class="diplome-item">
+        <span class="diplome-label">BAFA complet (approfond. ski alpin)</span>
+        <span class="diplome-meta">1999</span>
+      </div>
+      <div class="diplome-item">
+        <span class="diplome-label">Terminale S</span>
+        <span class="diplome-meta">CLE Hérouville · 1997</span>
+      </div>
+    </div>
+
+    <div>
+      <p class="section-title">Expériences professionnelles</p>
+      <div class="xp-item">
+        <div class="xp-role">Administratrice de production</div>
+        <span class="xp-dates">2013–2025</span>
+        <div class="xp-structure">Le Marchepied — accompagnement culturel, formation, gestion sociale</div>
+      </div>
+      <div class="xp-item">
+        <div class="xp-role">Travailleuse sociale</div>
+        <span class="xp-dates">2006–2012</span>
+        <div class="xp-structure">AAJB — Secteur insertion</div>
+      </div>
+      <div class="xp-item">
+        <div class="xp-role">Travailleuse sociale</div>
+        <span class="xp-dates">2004–2006</span>
+        <div class="xp-structure">Ville de Caen — La Boussole (accueil de jour sans-abris)</div>
+      </div>
+      <div class="xp-item">
+        <div class="xp-role">Palefrenière</div>
+        <span class="xp-dates">2004–2005</span>
+        <div class="xp-structure">Ranch des Flamands — Saint-Barthélémy</div>
+      </div>
+      <div class="xp-item">
+        <div class="xp-role">Éducatrice</div>
+        <span class="xp-dates">2003–2004</span>
+        <div class="xp-structure">ADSEAM — Les Bons Vents (IME)</div>
+      </div>
+      <div class="xp-item">
+        <div class="xp-role">Éducatrice</div>
+        <span class="xp-dates">2001–2003</span>
+        <div class="xp-structure">ACSEA — Institut Camille Blaisot (ITEP)</div>
+      </div>
+      <div class="xp-item">
+        <div class="xp-role">Animatrice socioculturelle</div>
+        <span class="xp-dates">1997–2003</span>
+        <div class="xp-structure">Centres de loisirs, de vacances & classes de neige (multiples employeurs)</div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+</body>
+</html>
